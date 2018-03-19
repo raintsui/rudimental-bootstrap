@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bootstrap之表单1</title>
+	<link rel="stylesheet" href="../dist/css/bootstrap.min.css">
+</head>
+<body>
+<!--bootstrap中的表单：
+    bootstrap给HTML大部分表单都设置了默认样式，可以给表单添加相应的类名，以实现表单的水平排列，个性化定制等-->
+<!--.input-lg表示框变大
+    .input-ng表示框变小-->	
+<!--.form-group整个组件像是块元素，有默认底边距15px的外边距-->
+<!--label中
+    .sr-only表示这里的提示信息即内容消失了
+    .control-label和包含的div使用has-success/has-error一起使用，可以看见label中文字和输入框颜色变化-->
+<form class="form-inline"><!--表示表单元素都变成行内元素,水平排版-->	
+
+	<div class="form-group has-error"><!--包含表单控件与label一起形成一个组件，使得下次控制样式只要控制整个组件就可以了-->	
+		<label class="control-label" for=""><!---->这是一个输入框：</label>
+		<input type="text" class="form-control input-lg" placeholder="这是一个输入框"><!--添加样式之后，带有圆角效果，且焦点发光-->
+	</div>
+	<div class="form-group has-success">
+		<label class="control-label" for="">这是一个选择框：</label>
+		<select class="form-control" name="" id="">
+			<option value="">别人</option>
+			<option value="">别人</option>
+			<option value="">别人</option>
+			<option value="">别人</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<label for="">这是一个输入框：</label>
+		<input type="text" class="form-control input-ng" placeholder="这是一个输入框">
+	</div>
+	<div class="form-group">
+		<label for="">这是一个输入框：</label>
+		<textarea name="" id="" cols="30" rows="10"></textarea>
+	</div>
+</form>	
+</body>
+</html>
